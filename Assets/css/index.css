@@ -126,6 +126,11 @@ a:hover {
     height: 100%;
 }
 
+.carousel-control-prev,
+.carousel-control-next {
+    z-index: 99;
+}
+
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
     background-color: rgba(128, 128, 128, 0.611);
