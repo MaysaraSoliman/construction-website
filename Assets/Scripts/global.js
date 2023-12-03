@@ -9,16 +9,16 @@ const headerChangeColor = function () {
 window.addEventListener("scroll", headerChangeColor);
 
 // Back To Top
-const backToTopBtn = document.querySelector("#back-to-top");
+const backToTopBtn = document?.querySelector("#back-to-top");
 
 const scrollToTopAddActiveClass = function () {
     window.scrollY > 200
         ? backToTopBtn.classList.add("active")
         : backToTopBtn.classList.remove("active");
 };
-window.addEventListener("scroll", scrollToTopAddActiveClass);
+window?.addEventListener("scroll", scrollToTopAddActiveClass);
 
 
-backToTopBtn.addEventListener("click", () => {
+backToTopBtn?.addEventListener("click", () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 });

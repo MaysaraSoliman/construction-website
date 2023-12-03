@@ -50,6 +50,66 @@ a:hover {
     color: var(--main-color-2) !important;
 }
 
+.main-heading {
+    font-size: 34px;
+    line-height: 32px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: var(--main-color-3);
+}
+
+.main-heading::before {
+    content: "";
+    position: absolute;
+    bottom: -0.4px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    width: 100px;
+    height: 2px;
+    background-color: var(--main-color-2);
+    z-index: 2;
+}
+
+.main-heading::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 1px;
+    width: 200px;
+    background-color: #dadada;
+}
+
+.main-sub-heading {
+    max-width: 80%;
+    font-size: 16px;
+    margin: 0 auto 60px;
+    color: var(--fourthly-color);
+}
+
+.general-btn {
+    width: fit-content;
+    margin: 30px auto 0;
+    padding: 10px;
+    color: var(--white-color);
+    background-color: var(--main-color-2);
+    font-weight: 700;
+    cursor: pointer;
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+
 /* Start Header */
 
 header {
