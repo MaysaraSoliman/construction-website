@@ -402,6 +402,7 @@ header {
     right: 40px;
     bottom: 40px;
     cursor: pointer;
+    z-index: 9999;
 }
 
 #footer .back-to-top.active {
